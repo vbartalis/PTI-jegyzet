@@ -9,10 +9,10 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Bartalis Vilmos",
-  tagline: "Welcome to my site! Üdvözöllek az oldalamon!",
+  title: "PTI Jegyzetek",
+  tagline: "Üdvözöllek az oldalamon!",
   url: "https://vbartalis.github.io",
-  baseUrl: "/",
+  baseUrl: "/PTI-jegyzet",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -20,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "vbartalis", // Usually your GitHub org/user name.
-  projectName: "vbartalis.github.io", // Usually your repo name.
+  projectName: "PTI-jegyzet", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -43,17 +43,16 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [[katex, { strict: false }]],
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: "https://github.com/vbartalis/vbartalis.github.io/tree/master/",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl: "https://github.com/vbartalis/vbartalis.github.io/tree/master/",
+        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
         sitemap: {
-          changefreq: "weekly",
           priority: 0.5,
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
@@ -74,53 +73,14 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "tetelek",
             position: "left",
-            label: "Docs",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/vbartalis/vbartalis.github.io",
-            label: "GitHub",
-            position: "right",
+            label: "Jegyzetek",
           },
         ],
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "PTI BSc",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/vbartalis",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/vbartalis/vbartalis.github.io",
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${
           2022 === new Date().getFullYear()
             ? new Date().getFullYear()

@@ -27,8 +27,8 @@ function HomepageHeader() {
           <p className={styles.heroTitle}>{siteConfig.title}</p>
           <p className={styles.heroSubitle}>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
-            <Link className="button button--secondary button--lg" to="/docs/intro">
-              Go to Wiki
+            <Link className="button button--secondary button--lg" to="/docs/exam/tetelek">
+              Ugrás a jegyzetekhez.
             </Link>
           </div>
         </div>
