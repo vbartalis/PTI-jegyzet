@@ -9,7 +9,7 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "PTI Jegyzetek",
+  title: "PTI Záróvizsga Jegyzetek",
   tagline: "Üdvözöllek az oldalamon!",
   url: "https://vbartalis.github.io",
   baseUrl: "/PTI-jegyzet",
