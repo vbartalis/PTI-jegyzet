@@ -16,6 +16,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -56,7 +57,6 @@ const config = {
           priority: 0.5,
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
-          trailingSlash: true,
         },
       }),
     ],
