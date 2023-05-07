@@ -60,6 +60,15 @@ const config = {
         },
       }),
     ],
+    [
+      "@docusaurus/preset-classic",
+      {
+        gtag: {
+          trackingID: "G-LLC1QQZDQ9",
+          anonymizeIP: true,
+        },
+      },
+    ],
   ],
 
   themeConfig:
