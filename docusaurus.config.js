@@ -58,17 +58,12 @@ const config = {
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
         },
-      }),
-    ],
-    [
-      "@docusaurus/preset-classic",
-      {
         gtag: {
           trackingID: "G-LLC1QQZDQ9",
           anonymizeIP: true,
         },
-      },
-    ],
+      }),
+    ]
   ],
 
   themeConfig:
