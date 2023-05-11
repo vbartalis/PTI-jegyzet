@@ -24,11 +24,11 @@ function HomepageHeader() {
       <div className={styles.heroTextContainer}>
         <ShowSvg {...svg}></ShowSvg>
         <div className={styles.heroTextArea}>
-          <p className={styles.heroTitle}>{siteConfig.title}</p>
+          <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
           <p className={styles.heroSubitle}>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link className="button button--secondary button--lg" to="/docs/tetelek">
-              Ugrás a jegyzetekhez.
+              Ugrás a záróvizsga jegyzetekhez.
             </Link>
           </div>
         </div>
@@ -40,7 +40,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`Home`} description="Description will go into a meta tag in <head />">
+    <Layout title={`Home`} description="Program tervező informatikus (PTI) szakos egyetemi zátóvizsga jegyzetek. Matematika és informatika.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

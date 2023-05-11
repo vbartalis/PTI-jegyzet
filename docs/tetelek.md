@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: Programtervező informatikus BSc záróvizsga tételek
+keywords: [PTI, 2023, Záróvizsga, informatika, matematika, program tervező informatikus, jegyzet]
 ---
 
 # Tételek
