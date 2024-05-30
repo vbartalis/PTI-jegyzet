@@ -1,6 +1,8 @@
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. You can find the deployed website at the following links:
+
+- https://vbartalis.github.io/PTI-jegyzet/
 
 ### Installation
 
